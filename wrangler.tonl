@@ -1,8 +1,12 @@
 name = "firefly"
-compatibility_date = "2026-05-04" # 更为今日
+compatibility_date = "2026-05-04"
 
 [assets]
 directory = "./dist"
 
-[vars]
-NODE_VERSION = "22"
+[build]
+command = "pnpm run build"
+
+[deploy]
+worker = true
+static = true
